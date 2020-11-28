@@ -1,0 +1,62 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 5%;
+  background-color: rgb(181, 230, 230);
+}
+
+.users{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  
+}
+
+.intro{
+  text-align: center;
+  margin-bottom: 2rem;
+  color: rgb(189, 105, 105);
+}
+
+.user{
+  margin-bottom: 3rem;
+  width: 20rem;
+  height: 31rem;
+  border-radius: 20px;
+  /* border: 2px solid gray; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.img-div{
+  height: 200px;
+  background-color: white;
+}
+
+.user p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: rgb(189, 105, 105);
+  line-height: 35px;
+}
+
+.user span{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  font-size: 13px;
+  color: rgb(116, 78, 78);
+
+}
+
+a{
+  /* text-decoration: none; */
+  color: inherit;
+}
+
+.userDetails{
+  padding: 1rem;
+}
