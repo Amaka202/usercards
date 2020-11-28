@@ -35,6 +35,12 @@ body{
 .img-div{
   height: 200px;
   background-color: white;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.img-div img{
+  height: 100%;
 }
 
 .user p{

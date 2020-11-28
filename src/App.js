@@ -8,8 +8,15 @@ export default class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      userArr: []
+      userArr: [],
+      searchInput: ""
     }
+  }
+
+  handleChange = (e) => {
+    this.setState({
+      searchInput: e.target.value
+    }, () => console.log("inpute test", this.state.searchInput))
   }
 
   componentDidMount(){
@@ -29,13 +36,18 @@ export default class App extends Component {
     const userArray = this.state.userArr.map(val =>   <UserCard key={val.id} userArr={val}/>
     )
 
+    const filteredUser = this.state.userArr.filter(user => {
+      return user.username.toLowerCase().includes(this.state.searchInput)
+    })
+
     return (
       <div>
         <div className="intro">
           <h2>Users and their details</h2>
         </div>
+        {/* <input type="text" placeholder="Search by username" onChange={this.handleChange}/> */}
         <div className="users">
-          {userArray}          
+          {userArray}
         </div>
       </div>
     );

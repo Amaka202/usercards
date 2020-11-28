@@ -7,7 +7,7 @@ export default function UserCard(props) {
         <div>
             <div className="user">
                 <div className="img-div">
-
+                    <img src={`https://robohash.org/${userArr.id}`} alt=""/> 
                 </div>
                 <div className="userDetails">
                     <p>Name: <span>{userArr.name}</span></p>
