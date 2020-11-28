@@ -33,8 +33,8 @@ export default class App extends Component {
       
 
   render() {
-    const userArray = this.state.userArr.map(val =>   <UserCard key={val.id} userArr={val}/>
-    )
+    // const userArray = this.state.userArr.map(val =>   <UserCard key={val.id} userArr={val}/>
+    // )
 
     const filteredUser = this.state.userArr.filter(user => {
       return user.username.toLowerCase().includes(this.state.searchInput)
@@ -45,9 +45,11 @@ export default class App extends Component {
         <div className="intro">
           <h2>Users and their details</h2>
         </div>
-        {/* <input type="text" placeholder="Search by username" onChange={this.handleChange}/> */}
-        <div className="users">
-          {userArray}
+        <form>
+          <input type="text" placeholder="Search by username" onChange={this.handleChange} id="search"/>
+        </form>
+        <div >
+          <UserCard userArr={filteredUser}/>
         </div>
       </div>
     );
