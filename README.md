@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+created with React and users API, this project makes api call and displays the result 
+in cards. with a search button to locate particular users by name 
+
+
+Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
